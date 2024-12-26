@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: no-repeat;
+    background-color: cover;
+}
+
+.avatar{
+    width: 30rem;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.avatar:hover{
+    animation: cambio 0.2s linear000000000000 infinite;
+}
+
+@keyframes cambio{
+    from{
+        background-image: url(player.png);
+    }
+    to{
+        background-image: url(golpe.png);
+
+    }
+}
