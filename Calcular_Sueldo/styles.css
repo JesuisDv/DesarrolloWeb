@@ -47,9 +47,7 @@ button{
     cursor: pointer;
     box-shadow: 0 0 0 0;
     transition: 0.2s;
-    font-weight: bold;
-    
-    
+    font-weight: bold; 
 }
 
 input{
@@ -64,6 +62,7 @@ button:hover {
 button:active{
     transform: translateY(3px);
     background-color: white;
+    
 }
 
 

@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+    flex-direction: column;
+
+}
+
+.contenedor{
+    background-color: white;
+    border: 2px solid blue;
+    height: 150px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s;
+    flex-direction: column;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.boton{
+    padding: 10px;
+    background-color: rgb(67, 67, 255);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.boton:active{
+    transform: translateY(3px)
+}
+
+.resaltado{
+    background-color: yellow;
+
+}
