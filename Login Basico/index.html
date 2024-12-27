@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+      
+
+
+        <div class="contenedor_campos">
+            <form action="procesar" method="post" id="formulario">
+                <h1>Iniciar Seccion</h1>
+
+                <label>Nombres
+                    <input class= "text" name="nombre" type="text" placeholder="Tu Nombre">
+                </label>
+                    
+                <label>Apellidos
+                    <input class= "text" name="apellido" type="text" placeholder="Tu Apellido">
+                </label>
+                
+                <label>Tu Nick
+                    <input class= "text" name="nick"  type="text" placeholder="Tu Nick">
+                </label>      
+                
+                <label>Email
+                    <input class= "text" name="email" type="email" placeholder="Tu Email">
+                </label>
+                
+                <label>Contraseña
+                    <input class= "text" name="contraseña" type="password" placeholder="Tu Contraseña">
+                </label>
+                <input class="check" type="checkbox" id="terminos" name="terminos"> Acepto los Terminos y Condiciones
+            
+                <button type="submit" id="enviar">Iniciar Sección</button>
+
+            </form>
+
+            <button id="modo">modo</button>
+
+        </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
