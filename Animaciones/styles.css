@@ -1,0 +1,104 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: fondo 3s infinite;
+    transition: 0.5s;
+    background-size: cover;
+    
+}
+
+.cubo{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 0, 242);
+    animation: rotar 2s infinite;
+
+}
+
+.circulo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(170, 0, 182);
+    animation: rebotar 2s infinite ;
+}
+
+.triangulo{
+    width: 0;
+    height: 0;
+    border-bottom: 100px rgb(162, 0, 255) solid;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    animation: mover 2s linear infinite;
+    position: relative;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+@keyframes fondo{
+    0%,100%{
+        background: url("https://wallpapers.com/images/hd/1920-x-1080-hd-1qq8r4pnn8cmcew4.jpg") center/cover ;
+    }
+    50%{
+
+        background: rgb(247,169,52);
+        background: -moz-linear-gradient(45deg, rgb(247,169,52) 0%, rgb(247,169,52) 11%, rgb(240,24,215) 58%, rgb(132,0,255) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgb(247,169,52)), color-stop(11%, rgb(247,169,52)), color-stop(58%, rgb(240,24,215)), color-stop(100%, rgb(132,0,255)));
+        background: -webkit-linear-gradient(45deg, rgb(247,169,52) 0%, rgb(247,169,52) 11%, rgb(240,24,215) 58%, rgb(132,0,255) 100%);
+        background: -o-linear-gradient(45deg, rgb(247,169,52) 0%, rgb(247,169,52) 11%, rgb(240,24,215) 58%, rgb(132,0,255) 100%);
+        background: -ms-linear-gradient(45deg, rgb(247,169,52) 0%, rgb(247,169,52) 11%, rgb(240,24,215) 58%, rgb(132,0,255) 100%);
+        background: linear-gradient(45deg, rgb(247,169,52) 0%, rgb(247,169,52) 11%, rgb(240,24,215) 58%, rgb(132,0,255) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7a934', endColorstr='#8400ff', GradientType=1 );
+    }
+
+    75%{
+
+        background: url("https://wallpapers.com/images/hd/1920-x-1080-hd-1qq8r4pnn8cmcew4.jpg") center/cover; 
+    }
+}
+
+@keyframes rotar{
+    0%,100%{
+        transform: rotate(0deg);
+        background-color: rgb(255, 0, 242)
+    }
+
+    50%{
+        transform: rotate(360deg);
+        background-color: rgb(255, 187, 252)
+    }
+}
+
+@keyframes rebotar {
+    0%,100%{
+        transform: translateY(0px) ;
+        height: 100px;
+        width: 100px;
+        
+    }
+
+    50%{
+        transform: translateY(-100px);
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@keyframes mover {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(70px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+    }
+  }

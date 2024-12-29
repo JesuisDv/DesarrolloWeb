@@ -51,6 +51,9 @@ body{
     0%{
         transform: translateY(0px) ;
     }
+    50%{
+        
+    }
 
     100%{
         transform: translateY(-100px);
