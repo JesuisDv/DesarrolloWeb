@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <input id="pantalla" readonly>
+        <div id="teclas">
+            <button onclick="borrar()" class="accion">AC</button>
+            <button onclick="borrarUltimoDigito()" class="accion">C</button>
+            <button onclick="porcentaje()" class="accion">%</button>
+            <button onclick="escribir('/')" class="operador">/</button>
+
+            <button onclick="escribir('7')">7</button>
+            <button onclick="escribir('8')">8</button>
+            <button onclick="escribir('9')">9</button>
+            <button onclick="escribir('*')" class="operador">x</button>
+
+            <button onclick="escribir('4')">4</button>
+            <button onclick="escribir('5')">5</button>
+            <button onclick="escribir('6')">6</button>
+            <button onclick="escribir('-')" class="operador">-</button>
+
+            <button onclick="escribir('1')">1</button>
+            <button onclick="escribir('2')">2</button>
+            <button onclick="escribir('3')">3</button>
+            <button onclick="escribir('+')" class="operador">+</button>
+
+            <button onclick="escribir('0')" class="cero">0</button>
+            
+            <button onclick="escribir('.')">.</button>
+            <button onclick="calculate()" class="operador">=</button>
+            
+        </div>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
