@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="trian">
+        <h1>Identificar Triángulo</h1>
+        <p class="parrafo">Introduce las longitudes de cada lado</p>
+        <label for="lado1">Lado 1: </label>
+        <input id="lado1" type="number" placeholder="△">
+        <label for="lado2">Lado 2:</label>
+        <input id="lado2" type="number" placeholder="△">
+        <label for="lado3">Lado 3:</label>
+        <input id="lado3" type="number" placeholder="△">
+        <button id="Calcular" onclick="calcular()">Identificar Triángulo</button>
+        <p id="triangulo">...</p>
+        </div>
+        <div class="num">
+            <h1>Clasificador de Números</h1>
+            <p class="parrafo">Ingrese un numero para verificar si es positivo, negativo o igual a cero</p>
+            <input type="number" id="numero" placeholder="Ingrese un número">
+            <button id="entero" onclick="calculo()">Verificar</button>
+            <p id="resultado">...</p>
+        </div>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>
