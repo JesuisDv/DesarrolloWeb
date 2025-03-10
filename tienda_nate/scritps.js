@@ -20,8 +20,7 @@ restar.addEventListener('click', () => {
 })
 
 document.getElementById('comprar').addEventListener('click', function(){
-    var element = document.querySelector('.modal')
-    element.style.display = 'flex'
+
 })
 
 document.getElementById('comprar').addEventListener('click', function(){

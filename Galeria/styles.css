@@ -1,0 +1,127 @@
+*{
+        margin: 0;
+        padding: 0;
+}
+
+body{
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://st4.depositphotos.com/6504442/26532/v/450/depositphotos_265329078-stock-illustration-light-green-vector-backdrop-with.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+li{
+    list-style: none;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.cont1{
+    display: grid;
+    width: 50vw;
+    height: 50vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont1 img{
+    display: block;
+    width: 43%;
+    margin: auto;
+    border: 1px solid rgb(168, 168, 168);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0px 190px 0px 190px;
+    border-radius: 10px;
+}
+
+.cont2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 36vw;
+    height: 60vh;
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.cont2 img {
+    width: 160px;
+    object-fit: cover;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto ;
+    gap: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0px 35px 0px 35px;
+}
+
+.cont3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 50vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont3 img{
+    width: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto ;
+    border: 1px solid rgb(168, 168, 168);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0px 35px 0px 35px;
+}
+
+.cont4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 50vw;
+    height: 50vh;
+}
+
+.cont2  img:hover{
+    background: rgba(255, 255, 255, 0.229);
+}
+
+.image-description {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; 
+}
+
+.cont1 {
+    position: relative;
+}
+
+.cont1:hover .image-description {
+    display: block;
+}
+
