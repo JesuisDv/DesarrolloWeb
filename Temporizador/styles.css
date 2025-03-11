@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(156deg, rgba(36,0,0,1) 0%, rgba(30,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#tiempoUser{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#tiempoUser input{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+
+
+}
+
+.tiempo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(156deg, rgba(33,9,242,1) 0%, rgba(120,162,179,1) 50%, rgba(0,244,255,1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.tiempo li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+.horas, .minutos, .segundos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    gap: 10px;
+    background: transparent;
+    font-size: 50px;
+}
+
+h1{
+    font-size: 3rem;
+    color: white;
+}
+
+button{
+    background: linear-gradient(156deg, rgba(33,9,242,1) 1%, rgba(120,162,179,1) 50%, rgba(0,244,255,1) 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#botones button:hover{
+    background: linear-gradient(156deg, rgba(33,9,242,1) 1%, rgba(120,162,179,1) 50%, rgba(0,244,255,1) 100%);
+    color: black;
+    transition: 0.5s;
+}
+
+#botones button:active{
+    transform: translateY(3px);
+    transition: 0.2s;
+}
+
+
