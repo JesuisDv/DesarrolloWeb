@@ -75,7 +75,7 @@ h1{
 }
 
 button{
-    background: linear-gradient(156deg, rgba(33,9,242,1) 1%, rgba(120,162,179,1) 50%, rgba(0,244,255,1) 100%);
+    background: linear-gradient(156deg, rgba(36,0,0,1) 0%, rgba(30,9,121,1) 50%, rgba(0,212,255,1) 100%);
     border: none;
     border-radius: 10px;
     padding: 10px;
@@ -92,7 +92,7 @@ button{
 }
 
 #botones button:hover{
-    background: linear-gradient(156deg, rgba(33,9,242,1) 1%, rgba(120,162,179,1) 50%, rgba(0,244,255,1) 100%);
+    background: linear-gradient(156deg, rgba(36,0,0,1) 0%, rgba(30,9,121,1) 50%, rgba(0,212,255,1) 100%);
     color: black;
     transition: 0.5s;
 }
